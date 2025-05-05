@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+          <div class="profile-wrapper">
+            <img src="profile.jpg" alt="Kassem Ataya" class="profile-image" />
+            <h1>Ali Mehaidly</h1>
+            <p>Data Engineer  |  Software Engineer  |  Data Analyst  |  IT | Cyber Security</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+          </div>
+        </div>
+      </header>
+      
+      
+      
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="summary">Hi! I’m Ali Mehaidli, a recent Computer Science graduate from Wayne State University. I’m passionate about building software that solves real-world problems and makes everyday life easier. I’m currently seeking opportunities to grow as a software engineer and contribute to impactful projects.</p>
+  </section>
+
+
+
+
+
+  <section id="experience" class="section experience-section">
+    <h2 class="section-title">Experience</h2>
+  
+    <div class="experience-item">
+      <button class="experience-header" onclick="toggleExperience(this)">
+        <div class="header-left">
+          <h3 class="job-title"> CS Tutor <span>@ Wayne State Univercity</span></h3>
+          <p class="date-range"><em>Jan 2022 – Oct 2024</em></p>
+        </div>
+        <div class="arrow">&#9660;</div> 
+      </button>
+  
+      <div class="experience-details">
+        <p class="summary">Worked as a tutor at wayne state department for 2 years teaching others my thing you feel me</p>
+        <ul class="highlight-list">
+          <li>Demonstrated expertise in computer science and programming through tutoring. Assisted individuals with complex topics, debugging, and problem-solving.</li>
+          <li>Facilitated learning by conveying intricate computer science concepts in a clear and accessible manner. Established open lines of communication with students, fostering a collaborative and supportive learning environment.</li>
+          <li>Tailored tutoring to diverse needs and learning styles. Adapted to multiple languages and technologies, showcasing versatility and commitment to industry trends.</li>
+        </ul>
+        <div class="tech-stack-grid">
+          <span>Python</span>
+          <span>C++</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JAVA</span>
+          <span>OOPS</span>
+          <span>SQL</span>
+        </div>
+      </div>
+    </div>
+
+
+  
+    <!-- Repeat experience-item for more jobs -->
+  </section>
+  
+  
+  <script>
+    function toggleExperience(button) {
+      const details = button.nextElementSibling;
+      details.classList.toggle('open');
+      button.querySelector('.arrow').classList.toggle('rotate');
+    }
+    </script>
+    
+
+
+
+
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Project Name1</h3>
+            <p>Project Section Still Under Development</p>
+            <div class="tech-stack-grid">
+                <span>Tech1</span>
+                <span>Tech2</span>
+                <span>Tech3</span>
+                <span>Tech4</span>
+              </div>
+            <a href="https://github.com/your-repo1" target="_blank">View on GitHub</a>
+          </div>
+
+          <!-- Add more project cards as needed -->
+        </div>
+      </section>
+      
+
+  <section id="skills" class="section">
+    <h2 class="section-title">Skills</h2>
+    <div class="tech-stack-skills-grid">
+      <span>Python</span>
+      <span>SQL</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Power BI</span>
+      <span>Power Platform</span>
+      <span>Power Automate</span>
+      <span>Power Apps</span>
+      <span>Low code Platforms</span>
+      <span>Data Visualization</span>
+      <span>Leadership</span>
+    </div>
+  </section>
+  
+
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-card">
+      <p><strong>Name:</strong> Kassem Ataya</p>
+      <p><strong>Email:</strong> <a href="mailto:kace.might42@gmail.com">kace.might42@gmail.com</a></p>
+      <p><strong>Location:</strong> DEARBORN, MI</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/kassem-ataya-276216243/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/Kasataya" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+      <a href="/assets/Resume.pdf" class="btn download-btn" target="_blank" rel="noopener noreferrer">Download Resume</a>
+    </div>
+</section>
+  
+  <footer>
+    <p>© 2025 Kassem Ataya. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
